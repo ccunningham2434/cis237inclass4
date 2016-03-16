@@ -27,6 +27,26 @@ namespace cis237inclass4
             {
                 Console.WriteLine(x.Data);
             }
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            // Do some deletes of the linked list.
+            // This will delete the first one in the list.
+            myLinkedList.Delete(0);
+            // Now there are 3, this will delete the middle one in the list.
+            myLinkedList.Delete(1);
+            // Now there are 2, this will delete the last one in the list.
+            myLinkedList.Delete(1);
+
+            // Now there is only 1.
+            for (Node x = myLinkedList.Head; x != null; x = x.Next)
+            {
+                Console.WriteLine(x.Data);
+            }
+
+            Console.ReadLine();
         }
     }
 }
